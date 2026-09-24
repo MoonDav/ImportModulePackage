@@ -6,11 +6,11 @@ from application.db.people import get_employees
 
 
 if __name__ == '__main__':
-    print(f"=== Бухгалтерия запущена {datetime.now().strftime('%d.%m.%Y %H:%M:%S')} ===")
+    now = datetime.now().strftime('%d.%m.%Y %H:%M:%S')
+    print(f"=== Бухгалтерия запущена {now} ===")
     calculate_salary()
     get_employees()
     print("=== Работа завершена ===")
 
     console = Console()
-    console.print(f"[bold green]Бухгалтерия выполнила свою работу:[/] {datetime.now().strftime('%d.%m.%Y %H:%M:%S')}")
-
+    console.print(f"[bold green]Бухгалтерия выполнила свою работу:[/] {now}")

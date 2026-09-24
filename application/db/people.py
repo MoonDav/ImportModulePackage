@@ -6,7 +6,8 @@ __all__ = ['get_employees']
 
 def get_employees():
     """Функция для получения списка сотрудников (заглушка)."""
-    print(f"[people] Список сотрудников получен. Дата: {datetime.now().strftime('%d.%m.%Y %H:%M:%S')}")
+    now = datetime.now().strftime('%d.%m.%Y %H:%M:%S')
+    print(f"[people] Список сотрудников получен. Дата: {now}")
 
 
 if __name__ == '__main__':

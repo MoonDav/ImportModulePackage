@@ -5,6 +5,7 @@ from application.db.people import *
 
 
 if __name__ == '__main__':
-    print(f"=== dirty_main запущен {datetime.now().strftime('%d.%m.%Y %H:%M:%S')} ===")
+    now = datetime.now().strftime('%d.%m.%Y %H:%M:%S')
+    print(f"=== dirty_main запущен {now} ===")
     calculate_salary()
     get_employees()
